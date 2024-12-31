@@ -1,0 +1,107 @@
+:root {
+    --font-family: 'Young Serif', serif;
+    --background-color: #f7e6d2;
+    --primary-color: #814431;
+    --secondary-color: #a75676;
+    --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    font-family: var(--font-family);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+    margin: 20px;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 18px;
+    color: var(--primary-color);
+}
+
+p, li {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.card {
+    width: 80%;
+    max-width: 500px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: var(--card-shadow);
+    padding: 30px;
+    margin: 10px;
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.prep-time {
+    background-color: #faedf8;
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.prep-style {
+    color: var(--secondary-color);
+}
+
+.prep-list, .ingredient-list {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.header-color {
+    color: var(--primary-color);
+    margin-top: 20px;
+}
+
+table {
+    margin: 10px 0;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom: 1px solid #ececec;
+    font-size: 10px;
+}
+
+.nutri-label {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.nutri-p {
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 16px;
+    }
+
+    p, li {
+        font-size: 10px;
+    }
+}
